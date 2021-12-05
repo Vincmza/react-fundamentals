@@ -1,0 +1,11 @@
+.card {
+  background-color: beige;
+}
+
+.card-title {
+  color: red;
+}
+
+.card-body {
+  color: green;
+}
