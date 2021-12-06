@@ -22,9 +22,10 @@ interface TodoListState {
 }
 
 /*
- * Défini quel "type d'action" peux arrivé dans mon composant
+ * Défini quel "action" peux arrivé dans mon composant
  *
- * Pour le format : see flux standard action convention (https://github.com/redux-utilities/flux-standard-action)
+ * On utilise le `Discriminated Union` de TypeScript sur le type d'action pour avoir le bon type : see (https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html#discriminating-unions)
+ * Pour le format on utilise la convention `flux standard action` : see (https://github.com/redux-utilities/flux-standard-action)
  */
 type TodoListActions =
   | { type: "START_FETCH_TODOS" }
@@ -56,7 +57,7 @@ const todoListReducer = (
       ...state,
       isLoading: false,
       errorMessage: "",
-      todos: action.payload, // type is infered via TypeScript `type guard`
+      todos: action.payload, // Le type est reconnu par TypeScript grâce au `type guard` & `Discriminated Union`
     };
   }
 
@@ -64,7 +65,7 @@ const todoListReducer = (
     return {
       ...state,
       isLoading: false,
-      errorMessage: action.payload.message, // type is infered via TypeScript `type guard`
+      errorMessage: action.payload.message, // Le type est reconnu par TypeScript grâce au `type guard` & `Discriminated Union`
     };
   }
 

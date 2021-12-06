@@ -8,7 +8,7 @@
 
 import React from "react";
 
-class BasicUsage extends React.Component {
+export class BasicUsage extends React.Component {
   render() {
     return <div id="header">Hello React</div>;
   }
@@ -17,18 +17,17 @@ class BasicUsage extends React.Component {
 // Exemple 2
 
 interface Props {
-  name: string
+  name: string;
 }
 
 interface State {
-  count: number
+  count: number;
 }
 
-class WithStateAndProps extends React.Component<Props, State> {
-
+export class WithStateAndProps extends React.Component<Props, State> {
   state: State = {
-    count: 0
-  }
+    count: 0,
+  };
 
   increment() {
     this.setState({ count: this.state.count + 1 });
