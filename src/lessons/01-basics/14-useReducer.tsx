@@ -2,6 +2,8 @@
  * 14-useReducer
  *
  * useReducer permet de gérer un état complexe qui aurait nécessité plusieurs `useState`.
+ *
+ * Voir le schéma dans le dossier `resources`.
  */
 
 // Exemple

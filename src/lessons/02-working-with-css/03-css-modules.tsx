@@ -17,7 +17,7 @@
  * - format : [filename]_[classname]__[hash]
  * - ex: Card_card-title__x3hd87
  */
-import styles from "./resources/Card.module.css";
+import styles from "../../resources/Card.module.css";
 
 export function Card() {
   // pour les classes CSS contenant un `-` il faut utiliser la syntaxe `tableau` => `styles["my-class-name"]`

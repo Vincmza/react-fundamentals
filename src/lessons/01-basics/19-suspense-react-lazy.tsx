@@ -12,7 +12,7 @@
 import React, { Suspense } from "react";
 
 const LazyLoadedComponent = React.lazy(
-  () => import("../../playground/LazyLoadedComponent")
+  () => import("../../resources/LazyLoadedComponent")
 );
 
 export function UsingSuspense() {
