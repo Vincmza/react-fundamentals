@@ -69,7 +69,7 @@ export function UpdateBasedOnPreviousState() {
 
 export function WithObject() {
   /*
-   * useSatte crée un etat dont la valeur initiale est un objet.
+   * useState crée un etat dont la valeur initiale est un objet.
    */
   const [person, setPerson] = useState({ name: "Bruce", gender: "male" });
 
@@ -96,7 +96,7 @@ export function WithObject() {
 
 export function WithArray() {
   /*
-   * useSatte crée un etat dont la valeur initiale est un tableau.
+   * useState crée un etat dont la valeur initiale est un tableau.
    */
   const [fruits, setFruits] = useState(["Kiwi", "Cherry"]);
 
