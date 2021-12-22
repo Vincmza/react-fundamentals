@@ -16,7 +16,7 @@ import React, { useState } from "react";
 
 export function WithValueType() {
   /*
-   * useSatte crée un etat `name` avec la valeur initiale : Bruce
+   * useState crée un etat `name` avec la valeur initiale : Bruce
    * Et un setter, une methode `setName` permettant de changer l'état
    *
    * L'état en lui même (ici name) n'est pas modifiable, il faut utiliser le setter.
