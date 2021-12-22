@@ -27,7 +27,7 @@ export function WithValueType() {
   const callMeBatman = () => {
     /*
      * ici on change l'état via le setter : Bruce -> Batman
-     * Le composant sera donc re-rendu => nouvel appel à `ChangingStateValue`
+     * Le composant sera donc re-rendu => nouvel appel à `WithValueType`
      * Dans ce re-rendu `name` vaudra donc : Batman
      */
     setName("Batman");
